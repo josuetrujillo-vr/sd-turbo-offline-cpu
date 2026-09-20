@@ -1,8 +1,19 @@
 # Generación local de imágenes con SD-Turbo
 
-Para publicar el código, consulta [exclusiones y pasos para GitHub]
+[![Python 3.10-3.12](https://img.shields.io/badge/Python-3.10--3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![PyTorch CPU](https://img.shields.io/badge/PyTorch-2.2.2_CPU-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![Diffusers](https://img.shields.io/badge/Diffusers-0.27.2-FABD43?logo=huggingface&logoColor=white)](https://huggingface.co/docs/diffusers/)
+[![Gradio](https://img.shields.io/badge/Gradio-4.36.1-FF5733?logo=gradio&logoColor=white)](https://www.gradio.app/)
+[![License MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Offline_Ready-brightgreen.svg)](#modo-offline)
 
 Aplicación de texto a imagen en **CPU, FP32 y sin CUDA**, con interfaz Gradio y CLI. La instalación y `download_model.py` requieren internet. Después de preparar los archivos, la carga y la generación usan exclusivamente `models/`, incluso con la caché global de Hugging Face vacía.
+
+## Resultado
+
+![Ejemplo de generación local con SD-Turbo](docs/assets/result.png)
+
+*Generado con SD-Turbo, 1 paso, 512x512, perfil SFW, CPU/FP32.*
 
 ## Instalación en frío
 
