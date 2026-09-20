@@ -1,0 +1,30 @@
+# Python 3.10-3.12, 64 bits. Instalar PyTorch CPU antes de este archivo:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# Este indice permite fijar ruedas CPU aunque el comando anterior instale otra version.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.2.2+cpu
+torchvision==0.17.2+cpu
+
+diffusers==0.27.2
+transformers==4.40.1
+tokenizers==0.19.1
+accelerate==0.30.1
+safetensors==0.4.3
+huggingface-hub==0.23.1
+peft==0.10.0
+
+gradio==4.36.1
+gradio-client==1.0.1
+fastapi==0.112.2
+starlette==0.38.6  # Cumple starlette<1.0.0 y el rango de FastAPI.
+pydantic==2.10.6
+httpx==0.27.2
+uvicorn==0.32.1
+python-multipart==0.0.20
+
+pillow==10.3.0
+PyYAML==6.0.1
+tqdm==4.66.4
+numpy==1.26.4
+psutil==5.9.8
+truststore==0.10.4; sys_platform == "win32"

@@ -1,0 +1,44 @@
+# Las rutas relativas se resuelven desde la carpeta del proyecto.
+# repo y revision solo se usan en download_model.py.
+models:
+  sd_turbo:
+    repo: stabilityai/sd-turbo
+    revision: b261bac6fd2cf515557d5d0707481eafa0485ec2
+    path: models/sd-turbo
+    steps: 1
+    guidance_scale: 0.0
+
+vae:
+  enabled: true
+  repo: madebyollin/taesd
+  revision: 614f76814bbe30edbe2e627ace1c2234c81a2c0e
+  path: models/taesd
+  tiling: true
+
+safety_checker:
+  repo: CompVis/stable-diffusion-safety-checker
+  revision: cb41f3a270d63d454d385fc2e4f571c487c253c5
+  path: models/safety-checker
+
+profiles:
+  sfw:
+    model: sd_turbo
+    safety_checker: true
+    negative_prompt: ""
+    output_dir: output/sfw
+  nsfw:
+    model: sd_turbo
+    safety_checker: false
+    negative_prompt: ""
+    output_dir: output/nsfw
+
+hardware:
+  num_threads: 4
+  attention_slicing: false  # PyTorch SDPA por defecto; activar para comparar RAM.
+
+generation:
+  width: 512
+  height: 512
+
+web:
+  port: 7860

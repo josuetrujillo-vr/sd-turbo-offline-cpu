@@ -1,0 +1,5 @@
+# Opcional y experimental; no se instala en el flujo normal CPU.
+-r requirements.txt
+optimum[onnxruntime]==1.20.0
+onnxruntime==1.18.0
+onnx==1.16.0

@@ -1,0 +1,72 @@
+# Directorio de salida
+output/
+
+# Modelos descargados (pesados)
+models/
+*.safetensors
+*.onnx
+*.onnx.data
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
+*.gguf
+*.incomplete
+
+# Entorno virtual
+venv/
+.venv/
+.venv-*/
+env/
+
+# Python
+__pycache__/
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.cache/
+.huggingface/
+.coverage
+htmlcov/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Benchmark results
+benchmark_results/
+
+# Logs y paquetes locales
+*.log
+*.whl
+
+# Credenciales y configuracion privada
+.env
+.env.*
+!.env.example
+credentials.json
+secrets.json
+secrets.yaml
+secrets.yml
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Configuracion local de asistentes; revisar antes de compartir intencionalmente
+.codex/
+.agents/
